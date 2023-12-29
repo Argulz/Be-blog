@@ -154,7 +154,7 @@ export default function CreatePostForm() {
 
   const savePost = async (url: string) => {
     if (!title || !content) {
-      const errorMessage = "Title and content are required";
+      const errorMessage = "Titre et contenu requis";
       toast.error(errorMessage);
       setLoading(false)
       return;
@@ -177,15 +177,16 @@ export default function CreatePostForm() {
       });
 
       if (res.ok) {
-        toast.success("Post created successfully");
+        toast.success("Post créé avec successfully");
         setLoading(false)
         router.push("/dashboard");
         router.refresh();
       } else {
-        toast.error("Something went wrong.");
+        toast.error("Une erreur s'est produite.");
         setLoading(false)
       }
     } catch (error) {
+      toast.error("Une erreur s'est produite");
       console.log(error);
       setLoading(false)
     }

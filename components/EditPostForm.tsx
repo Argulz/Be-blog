@@ -154,7 +154,7 @@ export default function EditPostForm({ post }: { post: TPost }) {
 
   const updatePost = async (url: string) => {
     if (!title || !content) {
-      toast.error("Title and content are required");
+      toast.error("Titre et contenu requis");
       setLoading(false)
       return;
     }
@@ -176,16 +176,16 @@ export default function EditPostForm({ post }: { post: TPost }) {
       });
 
       if (res.ok) {
-        toast.success("Post edited successfully");
+        toast.success("Post edité avec successfully");
         setLoading(false)
         router.push("/dashboard");
         router.refresh();
       } else {
-        toast.error("Something went wrong.");
+        toast.error("Une erreur s'est produite.");
         setLoading(false)
       }
     } catch (error) {
-      toast.error("Something went wrong");
+      toast.error("Une erreur s'est produite");
       setLoading(false)
       console.log(error);
     }

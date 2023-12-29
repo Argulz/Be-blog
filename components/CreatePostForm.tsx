@@ -260,7 +260,7 @@ export default function CreatePostForm() {
             type="text"
             onChange={(e) => setLinkInput(e.target.value)}
             value={linkInput}
-            placeholder="Collez le lien et cliquer sur ajouter"
+            placeholder="Collez le lien et cliquer sur +"
           />
           <button onClick={addLink} className="btn flex gap-2 items-center">
             <span>
@@ -273,7 +273,7 @@ export default function CreatePostForm() {
                 <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
               </svg>
             </span>
-            Ajouter
+            
           </button>
         </div>
 

@@ -31,7 +31,7 @@ export default async function CategoryPosts({
   return (
     <>
       <h1>
-        <span className="font-normal">Category: </span>{" "}
+        <span className="font-normal">Categorie: </span>{" "}
         {decodeURIComponent(category)}
       </h1>
 
@@ -51,7 +51,7 @@ export default async function CategoryPosts({
           />
         ))
       ) : (
-        <div className="py-6">No posts to display</div>
+        <div className="py-6">Aucun post disponible</div>
       )}
     </>
   );
